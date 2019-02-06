@@ -5,7 +5,7 @@ metadata:
   labels:
     name: guestbook-service
     app: demo-guestbook-app
-
+    tier: front-end
 spec:
   type: LoadBalancer
   ports:
@@ -14,3 +14,4 @@ spec:
   selector:
     name: guestbook-app-pod
     app: demo-guestbook-app
+    tier: front-end

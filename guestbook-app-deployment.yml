@@ -4,6 +4,7 @@ metadata:
   name: guestbook-app
   labels:
     app: demo-guestbook-app
+    tier: front-end
 spec:
   replicas: 3
   selector:
@@ -17,6 +18,7 @@ spec:
       labels:
         name: guestbook-app-pod
         app: demo-guestbook-app
+        tier: front-end
     spec:
       containers:
         - name: guestbook-app
