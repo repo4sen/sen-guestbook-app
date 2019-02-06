@@ -8,7 +8,7 @@ spec:
   replicas: 3
   selector:
     matchLabels:
-      name: guestbook-app
+      name: guestbook-app-pod
       app: demo-guestbook-app
       tier: front-end
   template:
