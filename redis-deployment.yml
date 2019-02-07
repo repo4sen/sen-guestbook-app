@@ -16,7 +16,6 @@ spec:
     metadata:
       name: redis-pod
       labels:
-        name: redis-pod
         app: demo-guestbook-app
         tier: back-end
     spec:
